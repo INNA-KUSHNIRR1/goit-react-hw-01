@@ -31,7 +31,7 @@
   background-color: gray;
   border-radius: 50%;
   width: 300px;
-  transition: transform, background-color 250ms ease-in-out;
+  transition: transform 350ms ease-in-out, background-color 350ms ease-in-out;
 }
 .list {
   list-style-type: none;
@@ -41,7 +41,6 @@
   margin: 0;
   padding: 0;
   border-top: 4px solid gray;
-  /* width: 100%; */
 }
 .listItem {
   display: flex;
