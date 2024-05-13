@@ -1,0 +1,58 @@
+.card {
+  overflow: hidden;
+  background-color: white;
+  border: 6px solid black;
+  border-radius: 16px;
+  width: 750px;
+  color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.user {
+  padding: 24px;
+}
+.avatar:hover {
+  transform: scale(1.05);
+  background-color: rgb(198, 219, 211);
+}
+.username {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 48px;
+  font-weight: 600;
+}
+.usertag {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 400;
+  color: gray;
+}
+.avatar {
+  background-color: gray;
+  border-radius: 50%;
+  width: 300px;
+  transition: transform, background-color 250ms ease-in-out;
+}
+.list {
+  list-style-type: none;
+  background-color: rgb(223, 221, 221);
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  border-top: 4px solid gray;
+  /* width: 100%; */
+}
+.listItem {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  font-size: 42px;
+  padding: 28px;
+}
+.listItem:not(:first-child) {
+  border-left: 4px solid gray;
+}
+.listStat {
+  font-weight: 600;
+}

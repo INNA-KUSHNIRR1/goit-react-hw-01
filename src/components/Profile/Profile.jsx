@@ -1,27 +1,30 @@
-import './Profile.module.css';
+import style from './Profile.module.css';
 export default function Profile({ name, tag, location, image, stats }) {
+  const { followers, views, likes } = stats;
   return (
-    <div>
-       {' '}
-      <div>
-            <img src={image} alt="User avatar" />
-        <p>{name}</p>    <p>{tag}</p>    <p>{location}</p> {' '}
+    <div className={style.card}>
+      <div className={style.user}>
+        <img className={style.avatar} src={image} alt="User avatar" />
+        <p className={style.username}>{name}</p>
+        <p className={style.usertag}>{tag}</p>
+        <p className={style.usertag}>{location}</p>
       </div>
-       {' '}
-      <ul>
-           {' '}
-        <li>
-                <span>Followers</span>      <span>{stats.followers}</span>   {' '}
+
+      <ul className={style.list}>
+        <li className={style.listItem}>
+          <span>Followers</span>
+          <span className={style.listStat}>{followers}</span>
         </li>
-           {' '}
-        <li>
-                <span>Views</span>      <span>{stats.views}</span>   {' '}
+
+        <li className={style.listItem}>
+          <span>Views</span>
+          <span className={style.listStat}>{views}</span>
         </li>
-           {' '}
-        <li>
-                <span>Likes</span>      <span>{stats.likes}</span>   {' '}
+
+        <li className={style.listItem}>
+          <span>Likes</span>
+          <span className={style.listStat}>{likes}</span>
         </li>
-         {' '}
       </ul>
     </div>
   );
