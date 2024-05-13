@@ -1,0 +1,32 @@
+.listItem {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border: 2px solid black;
+  width: 115px;
+  border-radius: 16px;
+  align-items: center;
+  padding: 24px 12px;
+  margin-bottom: 24px;
+  font-size: 26px;
+  background-color: white;
+  transition: background-color 350ms ease-in-out, transform 350ms ease-in-out;
+}
+.listItem:hover {
+  background-color: rgb(154, 243, 173);
+  transform: scale(1.05);
+}
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+.Online {
+  color: green;
+}
+.Offline {
+  color: red;
+}
+.image {
+  width: 100%;
+}
