@@ -1,0 +1,11 @@
+.string:nth-child(2n) {
+  background-color: rgb(197, 133, 133);
+}
+.type {
+  text-align: left;
+  padding-left: 10%;
+  text-transform: capitalize;
+}
+.string {
+  font-size: 24px;
+}

@@ -22,7 +22,8 @@
   font-size: 48px;
   font-weight: 600;
 }
-.usertag {
+.userTag,
+.userLocation {
   margin: 0;
   font-size: 42px;
   font-weight: 400;

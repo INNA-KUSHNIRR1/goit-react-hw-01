@@ -6,8 +6,8 @@ export default function Profile({ name, tag, location, image, stats }) {
       <div className={style.user}>
         <img className={style.avatar} src={image} alt="User avatar" />
         <p className={style.username}>{name}</p>
-        <p className={style.usertag}>{tag}</p>
-        <p className={style.usertag}>{location}</p>
+        <p className={style.userTag}>{tag}</p>
+        <p className={style.userLocation}>{location}</p>
       </div>
 
       <ul className={style.list}>
